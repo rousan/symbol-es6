@@ -141,7 +141,7 @@ console.log(ES6.spreadOperator(Student).spread(["Ariyan", 10]).new().name); //Ar
 
 ## Testing
 
-    `npm test`
+  `npm test`
     
 ## Contributors
 
