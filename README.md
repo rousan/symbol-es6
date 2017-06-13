@@ -39,7 +39,7 @@ that provides some approximate equivalent implementation of those features.
 
 This object provides,
 
-* `isSymbol()` (It can be used as equivalent api of: `typeof symbol === 'symbol'`)
+* `isSymbol()` (It can be used as equivalent API of: `typeof symbol === 'symbol'`)
 * `instanceOf()` (Provides ES6 version of `instanceOf`)
 * `forOf()` (This method behaves exactly same as ES6 `for...of` loop)
 * `spreadOperator` (Gives same functionality of the `spread operator` of ES6)
@@ -129,3 +129,43 @@ function Student(name, roll) {
 
 console.log(ES6.spreadOperator(Student).spread(["Ariyan", 10]).new().name); //Ariyan
 ```
+
+## Installation
+
+* In browser context, just insert this script on the top of other scripts
+* For NodeJS, just install it from npm
+
+    `npm install symbol-es6`
+
+## Testing
+
+    `npm test`
+    
+## Contributors
+
+* [Ariyan Khan](https://github.com/ariyankhan)
+
+## License
+
+MIT License
+
+Copyright (c) 2017 Ariyan Khan
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
