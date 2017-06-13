@@ -1,56 +1,6 @@
-# Symbol-ES6
-Provides support for Symbol API of ES6 in ES5 for older JS environments i.e. older browsers or NodeJS.
-
-## Polyfills
-
-* `Symbol`
-    * `for()`
-    * `keyFor`
-    * `@@hasInstance`
-    * `@@isConcatSpreadable`
-    * `@@iterator`
-    * `@@toStringTag`
-    * `Symbol.prototype.toString()`
-    * `Symbol.prototype.valueOf()`
-    
-* `Function`
-    * `Function.prototype[@@hasInstance]()`
-    
-* `Array`
-    * `Array.prototype.concat()` (ES6 version, addition of `@@isConcatSpreadable` support)
-    * `Array.prototype[@@iterator]()`
-    * `Array.from()`
-    * `Array.prototype.entries()`
-    * `Array.prototype.keys()`
-
-* `Object`
-    * `Object.prototype.toString()` (ES6 version, addition of `@@toStringTag` support)
-
-* `String`
-    * `String.prototype[@@iterator]()`
-    
-## Limitation
-
-Some ES6 features can't be implemented in ES5 natively like `spread operator`, `for..of` loop,
-ES6 version of `instanceOf` operator etc. So this module exports a object named `ES6` globally,
-that provides some approximate equivalent implementation of those features.
-
-## `ES6` Object
-
-This object provides,
-
-* `isSymbol()` (It can be used as equivalent api of: `typeof symbol === 'symbol'`)
-* `instanceOf()` (Provides ES6 version of `instanceOf`)
-* `forOf()` (This method behaves exactly same as ES6 `for...of` loop)
-* `spreadOperator` (Gives same functionality of the `spread operator` of ES6)
-
-    
-## Examples
-
-```javascript
 "use strict";
 
-require("symbol-es6");
+require("../symbol-es6");
 
 console.log(Symbol("bar") === Symbol("bar")); //false
 
@@ -128,4 +78,3 @@ function Student(name, roll) {
 }
 
 console.log(ES6.spreadOperator(Student).spread(["Ariyan", 10]).new().name); //Ariyan
-```
