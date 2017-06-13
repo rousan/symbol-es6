@@ -440,7 +440,6 @@
         this._values = [];
         this._thisArg = thisArg;
     };
-
     // All the arguments must be iterable
     SpreadOperatorImpl.prototype.spread = function () {
         var self = this;

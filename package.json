@@ -1,0 +1,36 @@
+{
+  "name": "symbol-es6",
+  "version": "0.1.0",
+  "description": "Provides Symbol implementation of ES6 in pure ES5 for older browsers and JS engines",
+  "main": "symbol-es6.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node ./test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ariyankhan/symbol-es6.git"
+  },
+  "keywords": [
+    "es",
+    "es6",
+    "es5",
+    "symbol",
+    "es6-symbol",
+    "polyfill",
+    "ponyfill",
+    "js",
+    "implementation",
+    "harmony-symbol",
+    "js-symbol",
+    "es-symbol"
+  ],
+  "author": "Ariyan Khan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ariyankhan/symbol-es6/issues"
+  },
+  "homepage": "https://github.com/ariyankhan/symbol-es6#readme"
+}

@@ -1,5 +1,7 @@
 # Symbol-ES6
+
 Provides support for Symbol API of ES6 in ES5 for older JS environments i.e. older browsers or NodeJS.
+To get full implementations of ES6 in ES5, install [es6-harmony](https://github.com/ariyankhan/es6-harmony) module. 
 
 ## Polyfills
 
