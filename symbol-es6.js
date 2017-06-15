@@ -1,5 +1,5 @@
 /*!
- * Symbol-ES6 v0.1.0
+ * Symbol-ES6 v0.1.1
  * Provides Symbol implementation of ES6 in pure ES5 for older browsers
  * and JS engines.
  *

@@ -1,6 +1,6 @@
 {
   "name": "symbol-es6",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Provides Symbol implementation of ES6 in pure ES5 for older browsers and JS engines",
   "main": "symbol-es6.js",
   "directories": {
