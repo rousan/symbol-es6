@@ -39,7 +39,7 @@ that provides some approximate equivalent implementation of those features.
 
 ## `ES6` Object
 
-This object provides,
+This object provides,    
 
 * `isSymbol()` (It can be used as equivalent API of: `typeof symbol === 'symbol'`)
 * `instanceOf()` (Provides ES6 version of `instanceOf`)
@@ -79,7 +79,6 @@ console.log(it.next()); //{ done: false, value: 1 }
 console.log(it.next()); //{ done: true, value: undefined }
 
 function Bar() {
-
 }
 console.log(Object.prototype.toString.call(new Bar())); //[object Object]
 
