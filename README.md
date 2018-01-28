@@ -1,58 +1,42 @@
+[![NPM version](https://img.shields.io/npm/v/symbol-es6.svg)](https://www.npmjs.com/package/symbol-es6)
+[![NPM total downloads](https://img.shields.io/npm/dt/symbol-es6.svg)](https://www.npmjs.com/package/symbol-es6)
+[![Contributors](https://img.shields.io/github/contributors/rousan/symbol-es6.svg)](https://github.com/rousan/symbol-es6/graphs/contributors)
+[![License](https://img.shields.io/github/license/rousan/symbol-es6.svg)](https://github.com/rousan/symbol-es6/blob/master/LICENSE)
+
 # Symbol-ES6
 
-Provides support for Symbol API of ES6 in ES5 for older JS environments i.e. older browsers or NodeJS.
-To get full implementations of ES6 in ES5, install [es6-harmony](https://github.com/ariyankhan/es6-harmony) module. 
+Provides support for `ES6` Symbol API in `ES5` for older JS environments i.e. older browsers or NodeJS.
 
-## Polyfills
+> ES6 Symbol polyfill in pure ES5.
 
-* `Symbol`
-    * `for()`
-    * `keyFor`
-    * `@@hasInstance`
-    * `@@isConcatSpreadable`
-    * `@@iterator`
-    * `@@toStringTag`
-    * `Symbol.prototype.toString()`
-    * `Symbol.prototype.valueOf()`
-    
-* `Function`
-    * `Function.prototype[@@hasInstance]()`
-    
-* `Array`
-    * `Array.prototype.concat()` (ES6 version, addition of `@@isConcatSpreadable` support)
-    * `Array.prototype[@@iterator]()`
-    * `Array.from()`
-    * `Array.prototype.entries()`
-    * `Array.prototype.keys()`
+## Install
 
-* `Object`
-    * `Object.prototype.toString()` (ES6 version, addition of `@@toStringTag` support)
+### NPM
 
-* `String`
-    * `String.prototype[@@iterator]()`
-    
-## Limitation
+Install it from `npm` and `require` it before any other modules:
 
-Some ES6 features can't be implemented in ES5 natively like `spread operator`, `for..of` loop,
-ES6 version of `instanceOf` operator etc. So this module exports a object named `ES6` globally,
-that provides some approximate equivalent implementation of those features.
+```bash
+$ npm install --save symbol-es6
+```
 
-## `ES6` Object
+```javascript
+require("symbol-es6");
+```
 
-This object provides,    
+### CDN
 
-* `isSymbol()` (It can be used as equivalent API of: `typeof symbol === 'symbol'`)
-* `instanceOf()` (Provides ES6 version of `instanceOf`)
-* `forOf()` (This method behaves exactly same as ES6 `for...of` loop)
-* `spreadOperator` (Gives same functionality of the `spread operator` of ES6)
+If you prefer CDN, then just insert it into your HTML page on the top of other scripts:
 
-    
+```html
+<script src="https://cdn.jsdelivr.net/npm/symbol-es6/dist/symbol-es6.min.js"></script>
+```
+
 ## Examples
 
 ```javascript
 "use strict";
 
-require("symbol-es6");
+var ES6 = require("symbol-es6");
 
 console.log(Symbol("bar") === Symbol("bar")); //false
 
@@ -131,42 +115,66 @@ function Student(name, roll) {
 console.log(ES6.spreadOperator(Student).spread(["Ariyan", 10]).new().name); //Ariyan
 ```
 
-## Installation
+## Polyfills
 
-* In browser context, just insert this script on the top of other scripts
-* For NodeJS, just install it from npm
-
-    `npm install symbol-es6`
-
-## Testing
-
-  `npm test`
+* `Symbol`
+    * `for()`
+    * `keyFor`
+    * `@@hasInstance`
+    * `@@isConcatSpreadable`
+    * `@@iterator`
+    * `@@toStringTag`
+    * `Symbol.prototype.toString()`
+    * `Symbol.prototype.valueOf()`
     
-## Contributors
+* `Function`
+    * `Function.prototype[@@hasInstance]()`
+    
+* `Array`
+    * `Array.prototype.concat()` (ES6 version, addition of `@@isConcatSpreadable` support)
+    * `Array.prototype[@@iterator]()`
+    * `Array.from()`
+    * `Array.prototype.entries()`
+    * `Array.prototype.keys()`
 
-* [Rousan Ali](https://github.com/ariyankhan)
+* `Object`
+    * `Object.prototype.toString()` (ES6 version, addition of `@@toStringTag` support)
 
-## License
+* `String`
+    * `String.prototype[@@iterator]()`
 
-MIT License
 
-Copyright (c) 2017 Rousan Ali
+## Limitation
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Some `ES6` features can't be implemented in `ES5` natively like `spread operator`, `for..of` loop,
+`ES6` version of `instanceOf` operator etc. So this module exports a object named `ES6` globally,
+that provides some approximate equivalent implementation of those features.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+## `ES6` Object
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+This object provides,
 
+* `isSymbol()` (It can be used as equivalent API of: `typeof symbol === 'symbol'`)
+* `instanceOf()` (Provides ES6 version of `instanceOf`)
+* `forOf()` (This method behaves exactly same as ES6 `for...of` loop)
+* `spreadOperator` (Gives same functionality of the `spread operator` of ES6)
+
+## Contributing
+
+Your PRs and stars are always welcome.
+
+Please, try to follow:
+
+* Clone the repository.
+* Checkout `develop` branch.
+* Install dependencies.
+* Add your new features or fixes.
+* Build the project.
+
+```sh
+$ git clone https://github.com/rousan/symbol-es6.git
+$ cd symbol-es6
+$ git checkout develop
+$ npm i
+$ npm run build
+```
