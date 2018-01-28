@@ -1,6 +1,6 @@
 "use strict";
 
-require("../symbol-es6");
+var ES6 = require("../symbol-es6");
 
 console.log(Symbol("bar") === Symbol("bar")); //false
 

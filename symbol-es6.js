@@ -1,12 +1,11 @@
 /*!
- * Symbol-ES6 v0.1.1
- * Provides Symbol implementation of ES6 in pure ES5 for older browsers
- * and JS engines.
+ * Symbol-ES6 v0.1.2
+ * ES6 Symbol polyfill in pure ES5.
  *
- * @license Copyright (c) 2017 Ariyan Khan, MIT License
+ * @license Copyright (c) 2017-2018 Rousan Ali, MIT License
  *
- * Codebase: https://github.com/ariyankhan/symbol-es6
- * Date: Jun 14, 2017
+ * Codebase: https://github.com/rousan/symbol-es6
+ * Date: 28th Jan, 2018
  */
 
 (function (global, factory) {

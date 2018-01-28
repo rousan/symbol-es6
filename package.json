@@ -1,17 +1,15 @@
 {
   "name": "symbol-es6",
-  "version": "0.1.1",
-  "description": "Provides Symbol implementation of ES6 in pure ES5 for older browsers and JS engines",
+  "version": "0.1.2",
+  "description": "ES6 Symbol polyfill in pure ES5",
   "main": "symbol-es6.js",
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
+    "build": "uglifyjs --source-map --compress --output dist/symbol-es6.min.js -- symbol-es6.js",
     "test": "node ./test/test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ariyankhan/symbol-es6.git"
+    "url": "git+https://github.com/rousan/symbol-es6.git"
   },
   "keywords": [
     "es",
@@ -27,10 +25,13 @@
     "js-symbol",
     "es-symbol"
   ],
-  "author": "Ariyan Khan",
+  "author": "Rousan Ali <rousanali786@gmail.com> (https://rousan.io)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ariyankhan/symbol-es6/issues"
+    "url": "https://github.com/rousan/symbol-es6/issues"
   },
-  "homepage": "https://github.com/ariyankhan/symbol-es6#readme"
+  "homepage": "https://github.com/rousan/symbol-es6#readme",
+  "devDependencies": {
+    "uglify-js": "^3.3.9"
+  }
 }
