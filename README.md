@@ -158,23 +158,3 @@ This object provides,
 * `instanceOf()` (Provides ES6 version of `instanceOf`)
 * `forOf()` (This method behaves exactly same as ES6 `for...of` loop)
 * `spreadOperator` (Gives same functionality of the `spread operator` of ES6)
-
-## Contributing
-
-Your PRs and stars are always welcome.
-
-Please, try to follow:
-
-* Clone the repository.
-* Checkout `develop` branch.
-* Install dependencies.
-* Add your new features or fixes.
-* Build the project.
-
-```sh
-$ git clone https://github.com/rousan/symbol-es6.git
-$ cd symbol-es6
-$ git checkout develop
-$ npm i
-$ npm run build
-```
