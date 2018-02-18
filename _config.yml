@@ -2,3 +2,8 @@ theme: jekyll-theme-cayman
 title: "Symbol-ES6"
 description: "ES6 Symbol polyfill in pure ES5"
 show_downloads: "true"
+google_analytics: "UA-114357378-1"
+theme_color: "#061166"
+github:
+  zip_url: "https://github.com/rousan/symbol-es6/zipball/master"
+  tar_url: "https://github.com/rousan/symbol-es6/tarball/master"
